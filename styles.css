@@ -118,7 +118,7 @@ nav li {
     position: fixed;
     top: 0;
     left: 0;
-    width: 45px; /* Adjust the width as needed */
+    width: 55px; /* Adjust the width as needed */
     height: 55px; /* Maintain aspect ratio */
 }
 
