@@ -118,7 +118,7 @@ nav li {
     position: fixed;
     top: 0;
     left: 0;
-    width: 55px; /* Adjust the width as needed */
+    width: 70px; /* Adjust the width as needed */
     height: 55px; /* Maintain aspect ratio */
 }
 
@@ -207,3 +207,34 @@ footer {
 #copyright {
     text-align: center;
 }
+
+
+
+body {
+    margin: 0;
+    overflow: hidden; /* Prevents scrollbars from appearing */
+    cursor: auto; /* Keeps the default cursor */
+  }
+  
+  .dot {
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    background-color: black;
+    border-radius: 50%;
+    pointer-events: none;
+    animation: collapse 2s ease-out forwards; /* Defines the collapse animation */
+    will-change: transform, opacity;
+  }
+  
+  @keyframes collapse {
+    0% {
+      transform: scale(1);
+      opacity: 1;
+    }
+    100% {
+      transform: scale(0);
+      opacity: 0;
+    }
+  }
+  
