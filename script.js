@@ -10,8 +10,21 @@
     }
   }
 
+
+  function changeLogoOnScrollHyper() {
+    const logo = document.getElementById('royp-logo-hyper');
+    const scrollThreshold = 50; // You can adjust this value to control when the change happens
+
+    if (window.scrollY > scrollThreshold) {
+      logo.src = '../ROYP_Black.png'; // Image source for scrolled state
+    } else {
+      logo.src = '../ROYP.png'; // Image source for default state
+    }
+  }
+
   // Listen to the scroll event
   window.addEventListener('scroll', changeLogoOnScroll);
+  window.addEventListener('scroll', changeLogoOnScrollHyper);
 
 
 function toggleMenu() {
@@ -85,6 +98,7 @@ function createSwirlingDot(x, y) {
     time += 0.05; // Increment time to simulate movement
 
     // Move towards the mouse with acceleration
+    
     const newX = x + vx * time;
     const newY = y + vy * time;
 
@@ -102,8 +116,8 @@ function createSwirlingDot(x, y) {
 // Function to trigger dots at random short time intervals
 function triggerDotsAtRandomIntervals() {
   // Create a dot at a random position around the mouse
-  const startX = mouseX + (Math.random() - 0.5) * 200; // Random starting X near the mouse
-  const startY = mouseY + (Math.random() - 0.5) * 200; // Random starting Y near the mouse
+  const startX = mouseX + (Math.random() - 0.5) * 100; // Random starting X near the mouse
+  const startY = mouseY + (Math.random() - 0.5) * 100; // Random starting Y near the mouse
 
   createSwirlingDot(startX, startY);
 

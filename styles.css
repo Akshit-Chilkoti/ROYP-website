@@ -209,12 +209,12 @@ footer {
 }
 
 
-
+/* 
 body {
     margin: 0;
     overflow: hidden; /* Prevents scrollbars from appearing */
-    cursor: auto; /* Keeps the default cursor */
-  }
+    /* cursor: auto; Keeps the default cursor */
+  /* }  */
   
   .dot {
     position: absolute;
@@ -238,3 +238,4 @@ body {
     }
   }
   
+ 
